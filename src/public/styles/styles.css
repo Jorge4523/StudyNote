@@ -1,0 +1,425 @@
+/* ================================
+   ESTILOS GENERALES
+================================ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.no-subrayado {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Panel de usuario en el index */
+.user-panel {
+    display: flex;
+    gap: 10px;
+}
+
+.user-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* ================================
+   CONTENEDORES GENERALES
+================================ */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ================================
+   INDEX – HEADER + FILTROS
+================================ */
+.header-section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.filters button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.filters button.active {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+/* ================================
+   GRID DE NOTAS (INDEX)
+================================ */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-category {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+    color: #0056b3;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.card-footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-size: 13px;
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-new {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ================================
+   GUARDADOS – PAGE HEADER + LISTA
+================================ */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.page-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.page-header p {
+    margin: 0 0 5px 0;
+    font-size: 12px;
+    color: #0056b3;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sort-select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Lista */
+.saved-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.saved-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.saved-item:hover {
+    border-color: #999;
+}
+
+/* Contenido izquierda */
+.item-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.meta-info {
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.tag {
+    background-color: #eee;
+    color: #333;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.item-content h3 {
+    margin: 0 0 8px 0;
+    color: #0056b3;
+    font-size: 18px;
+}
+
+.item-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Acciones derecha */
+.item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    border-left: 1px solid #eee;
+}
+
+.btn-read {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.btn-read:hover {
+    background-color: #e9e9e9;
+}
+
+.btn-remove {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.btn-remove:hover {
+    color: #d9534f;
+}
+
+/* ================================
+   PERFIL – LAYOUT
+================================ */
+.container.profile-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+}
+
+/* Sidebar */
+.sidebar-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    height: fit-content;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.user-name {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.user-handle {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.user-bio {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 18px;
+    color: #0056b3;
+}
+
+.stat-item span {
+    font-size: 12px;
+    color: #777;
+}
+
+.btn-edit {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-edit:hover {
+    background-color: #f9f9f9;
+}
+
+/* Habilidades */
+.skills-section {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.skill-tag {
+    background-color: #eee;
+    color: #555;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: inline-block;
+    margin: 2px;
+}
+
+/* Tabs */
+.tabs {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #666;
+}
+
+.tab-btn.active {
+    border-bottom: 2px solid #0056b3;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* Publicaciones */
+.post-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post-date {
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.post-card h3 {
+    margin: 5px 0 10px 0;
+    color: #333;
+}
+
+.post-card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.post-actions {
+    font-size: 13px;
+    color: #888;
+}
+
+.pinned {
+    border-left: 4px solid #0056b3;
+}

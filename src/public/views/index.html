@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyNote</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    
+    
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="no-subrayado"><h1>StudyNote</h1></a>
+        </div>
+        <div class="nav-links">
+            <a href="guardados.html">Guardados</a>
+            <a href="perfil.html">Perfil</a>
+        </div>
+        <div class="user-panel">
+            <span>@Carlos</span>
+            <button class="btn-new">Nueva Nota</button>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container">
+        
+        <div class="header-section">
+            <h2>Bienvenido, Carlos</h2>
+            <p>Aquí tienes las últimas notas de tus temas.</p>
+            
+            <div class="filters">
+                <button class="active">Todo</button>
+                <button>Física</button>
+                <button>Historia</button>
+                <button>Programación</button>
+            </div>
+        </div>
+
+        <div class="grid">
+
+            <!-- Tarjeta 1 -->
+            <article class="card">
+                <span class="card-category">Física</span>
+                <h3>Segunda Ley de la Termodinámica</h3>
+                <p>¿Alguien me puede explicar de forma sencilla la entropía? Entiendo la fórmula pero me cuesta ver el concepto.</p>
+                <div class="card-footer">
+                    <span>Autor: Miguel Perez</span>
+                    <span>12 comentarios</span>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2 -->
+            <article class="card">
+                <span class="card-category">Historia</span>
+                <h3>Resumen: Revolución Francesa</h3>
+                <p>He subido un PDF con el resumen de las causas económicas. Espero que os sirva para el examen.</p>
+                <div class="card-footer">
+                    <span>Autor: Miguel Iglesias</span>
+                    <span>8 comentarios</span>
+                </div>
+            </article>
+
+            <!-- Tarjeta 3 -->
+            <article class="card">
+                <span class="card-category">Recursos</span>
+                <h3>Recursos Data Science 2025</h3>
+                <p>Lista de enlaces útiles para aprender Python y Pandas. Incluye datasets de prueba.</p>
+                <div class="card-footer">
+                    <span>Autor: Pita</span>
+                    <span>42 comentarios</span>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+</body>
+</html>

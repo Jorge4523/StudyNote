@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - StudyNote</title>
+
+    <!-- Importar CSS unificado -->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="no-subrayado"><h1>StudyNote</h1></a>
+        </div>
+        <div class="nav-links">
+            <a href="guardados.html">Guardados</a>
+            <a href="perfil.html" class="active">Perfil</a>
+        </div>
+        <div>
+            <a href="#" style="color:white; text-decoration:none;">@Carlos</a>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container profile-layout">
+        
+        <!-- Columna Izquierda Perfil -->
+        <aside class="sidebar-card">
+            <img src="https://img.freepik.com/vector-premium/ilustracion-plana-vectorial-escala-grises-icono-perfil-usuario-avatar-persona-imagen-perfil-silueta-genero-neutral-apto-perfiles-redes-sociales-iconos-protectores-pantalla-como-plantillax9xa_719432-2210.jpg?semt=ais_hybrid&w=740&q=80" 
+            alt="Foto perfil" class="profile-img">
+
+            <h2 class="user-name">Carlos Estudiante</h2>
+            <span class="user-handle">@carlos_estudiante</span>
+            
+            <p class="user-bio">
+                Descripcion del usuario.
+            </p>
+
+            <div class="stats-row">
+                <div class="stat-item">
+                    <strong>45</strong>
+                    <span>Notas</span>
+                </div>
+                <div class="stat-item">
+                    <strong>1.2k</strong>
+                    <span>Seguidores</span>
+                </div>
+            </div>
+
+            <button class="btn-edit">Editar Perfil</button>
+
+            <div class="skills-section">
+                <h4>Habilidades</h4>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Cálculo</span>
+                <span class="skill-tag">Historia</span>
+            </div>
+        </aside>
+
+        <!-- Columna Derecha -->
+        <section class="profile-content">
+            
+            <!-- Pestañas -->
+            <div class="tabs">
+                <button class="tab-btn active">Mis Notes</button>
+                <button class="tab-btn">Borradores</button>
+                <button class="tab-btn">Likes</button>
+            </div>
+
+            <!-- Post Fijado -->
+            <article class="post-card pinned">
+                <span class="post-date">Noviembre 2023 - Fijado</span>
+                <h3>Mi Roadmap para Sistemas Operativos 2025</h3>
+                <p>Lista completa de libros, vídeos y ejercicios prácticos que estoy usando para aprobar la asignatura.</p>
+                <div class="post-actions">
+                    1.2k Me gusta - 54 Comentarios
+                </div>
+            </article>
+
+            <!-- Post 1 -->
+            <article class="post-card">
+                <span class="post-date">Hace 4 horas</span>
+                <h3>Problemas con punteros en C++</h3>
+                <p>Estoy atascado con la gestión de memoria dinámica en listas enlazadas. ¿Algún consejo para no perder referencias?</p>
+                <div class="post-actions">
+                    12 Me gusta - 3 Comentarios
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="post-card">
+                <span class="post-date">Ayer</span>
+                <h3>Resumen Lectura: Don Quijote Cap 1-5</h3>
+                <p>Notas rápidas sobre los personajes principales y la sátira a las novelas de caballería.</p>
+                <div class="post-actions">
+                    45 Me gusta - 8 Comentarios
+                </div>
+            </article>
+
+        </section>
+
+    </div>
+
+</body>
+</html>

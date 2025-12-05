@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - StudyNote</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    
+
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="no-subrayado"><h1>StudyNote</h1></a>
+        </div>
+        <div class="nav-links">
+            <a href="guardados.html" class="active">Guardados</a>
+            <a href="perfil.html">Perfil</a>
+        </div>
+        <div>
+            <a href="" class="user-link">@Carlos</a>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container">
+        
+        <!-- Cabecera -->
+        <div class="page-header">
+            <div>
+                <p>Tus Guardados</p>
+                <h2>Biblioteca Personal</h2>
+            </div>
+            <div>
+                 <select class="sort-select">
+                     <option>Recientes</option>
+                     <option>Más antiguos</option>
+                     <option>Por materia</option>
+                 </select>
+            </div>
+        </div>
+
+        <!-- Lista de Guardados -->
+        <div class="saved-list">
+
+            <!-- Elemento 1 -->
+            <article class="saved-item">
+                <div class="item-content">
+                    <div class="meta-info">
+                        <span class="tag">Física</span>
+                        <span>Guardado hoy</span>
+                    </div>
+                    <h3>Duda sobre Termodinámica y Entropía</h3>
+                    <p>Explicación sencilla de la Segunda Ley de la Termodinámica, enfocada en la visualización del concepto.</p>
+                </div>
+                <div class="item-actions">
+                    <a href="#" class="btn-read">Leer Nota</a>
+                    <button class="btn-remove">Quitar</button>
+                </div>
+            </article>
+
+            <!-- Elemento 2 -->
+             <article class="saved-item">
+                <div class="item-content">
+                    <div class="meta-info">
+                        <span class="tag">Programación</span>
+                        <span>Guardado el 20 Feb</span>
+                    </div>
+                    <h3>Roadmap Data Science 2025</h3>
+                    <p>Recopilación de recursos gratuitos, cursos de Kaggle y certificaciones recomendadas para empezar.</p>
+                </div>
+                <div class="item-actions">
+                    <a href="#" class="btn-read">Leer Nota</a>
+                    <button class="btn-remove">Quitar</button>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+</body>
+</html>
