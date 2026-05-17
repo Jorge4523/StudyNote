@@ -8,7 +8,7 @@ Presentación del TFG: https://canva.link/sn5k97hhgkuhpuu
 
 # Guía de instalación y arranque del proyecto
 
-Este proyecto está compuesto por un Backend (API) desarrollado con Laravel 11 y un Frontend desarrollado con React y Vite. La base de datos está configurada por defecto en SQLite, por lo que no es necesario instalar ni configurar MySQL o PostgreSQL.
+Este proyecto está compuesto por un Backend (API) desarrollado con Laravel 11 y un Frontend desarrollado con React. La base de datos está configurada por defecto en SQLite, por lo que no es necesario instalar ni configurar MySQL o PostgreSQL.
 
 A continuación se explican los pasos necesarios para instalar las dependencias y levantar ambos servidores en entorno de desarrollo local.
 
