@@ -2,6 +2,8 @@ Jorge Peña Sobrado
 
 Servicio Mail para creacion Usuarios https://mailtrap.io/ o codigo maestro 000000
 
+Presentación del TFG: https://canva.link/sn5k97hhgkuhpuu
+
 ---
 
 # Guía de instalación y arranque del proyecto
