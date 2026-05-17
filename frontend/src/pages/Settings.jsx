@@ -84,7 +84,7 @@ const Settings = () => {
       setError('Se requiere la contraseña actual para verificar la identidad.');
       return;
     }
-    if (passwordForm.new || passwordForm.new.length < 6) {
+    if (!passwordForm.new || passwordForm.new.length < 6) {
       setError('La nueva contraseña debe tener una longitud mínima de 6 caracteres.');
       return;
     }
